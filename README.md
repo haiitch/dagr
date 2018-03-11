@@ -1,18 +1,18 @@
 # dagr
-
-dagr is a ruby client for the api exposed by an IPFS daemon.
+### dagr is a ruby client for the api exposed by an IPFS daemon.
 
 the current go-ipfs version I'm testing dagr against is go-ipfs 0.4.14-dev.
 some samples on how to use it are available under the poets/ directory
 
 the dagr client is presented as a one-file ruby module under the 
 IPFS namespace, containing three classes:
+```ruby
+IPFS::Client     # simple api commands
 
-IPFS::Client
+IPFS::DAGObject  # handles IPFS node manipulation created as unixfs objects
 
-IPFS::DAGObject   handles IPFS nodes created as unixfs objects
-
-IPFS::DAG         handles IPFS nodes through the plain dag api commands
+IPFS::DAG        # handles IPFS node manipulation through the plain dag api commands
+```
 
 both DAGObject and DAG make use of IPFS::Client to store and retrieve 
 dag nodes offering convenience methods and operators to walk dags
@@ -27,7 +27,7 @@ a number of api calls remain unimplemented, whilst presenting a
 complete api is not the primary goal of this project, I'll do my
 best to complete it as needed, and I'll accept any fixes, additions,
 and suggestions that follow a lean and mean philosophy as a priority
-over [architectural astronautics|https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/].
+over [architectural astronautics](https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/).
 
 
 so far, no effort has been made to implement correct error handling, 
