@@ -1,6 +1,7 @@
 If licencing terms are confusing to you and you don't want to spend any time
 learning about legal matters, just use this under the terms of the MIT license, 
 which is compatible with almost anything else.
+
 [MIT license](./LICENSE)
 
 For the discerning coder who already understands the implications of software licencing,
