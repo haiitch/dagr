@@ -5,9 +5,12 @@ to you to decide which will help you better to achieve that goal with
 your particular **application**.I
 
 See terms for each licence under the files:
-[LICENSE](MIT licence)
-[LICENSE.gplv3](GNU General Public License v3)
-[LICENSE.agpl3](GNU Affero Public License v3)
+
+[./LICENSE](MIT licence)
+
+[./LICENSE.gplv3](GNU General Public License v3)
+
+[./LICENSE.agpl3](GNU Affero Public License v3)
 
 
 
