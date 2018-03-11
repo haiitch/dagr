@@ -5,8 +5,9 @@ which is compatible with almost anything else.
 [MIT license](./LICENSE)
 
 For the discerning coder who already understands the implications of software licencing,
-I'm releasing this under three licenses (GPLv3, AGPL3, and MIT) in this 
-particular case because my working theory is that making a p2p **library** 
+I'm releasing this under three licenses (GPLv3, AGPL3, and MIT) for you to choose from.
+
+In this particular case because my working theory is that making a p2p **library** 
 easier to use for more people will hurt centralization more, and I'm leaving it up 
 to you to decide which will help you better to achieve that primary goal with 
 your particular **application**.
