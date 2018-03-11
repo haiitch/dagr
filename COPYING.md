@@ -1,4 +1,4 @@
-If licencing terms are confusing to you and you don't want to spend any time
+If licensing terms are confusing to you and you don't want to spend any time
 learning about legal matters, just use this under the terms of the MIT license, 
 which is compatible with almost anything else.
 
