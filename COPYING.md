@@ -7,9 +7,9 @@ which is compatible with almost anything else.
 For the discerning coder who already understands the implications of software licencing,
 I'm releasing this under three licenses (GPLv3, AGPL3, and MIT) for you to choose from.
 
-In this particular case because my working theory is that making a p2p **library** 
+The reason for this licensing decision In this particular case is that making a p2p **library** 
 easier to use for more people will hurt centralization more, and I'm leaving it up 
-to you to decide which will help you better to achieve that primary goal with 
+to you to decide which license will help you better to achieve that primary goal with 
 your particular **application**.
 
 All your freedoms will be thoroughly respected if you choose one of the Libre licences,
