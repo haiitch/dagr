@@ -1,0 +1,9 @@
+{	
+	"Node": {
+			"label"      : "Lautréamont",
+			"firstname"  : "Isidore",
+			"lastname"   : "Ducasse",
+			"alias"	     : "Lautréamont",
+			"alsoknownas" : [ "Comte de Lautréamont", "El Montevideano"]
+	}
+}
