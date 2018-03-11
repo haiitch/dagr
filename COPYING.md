@@ -4,7 +4,7 @@ which is compatible with almost anything else.
 
 [MIT license](./LICENSE)
 
-For the discerning coder who already understands the implications of software licencing,
+For the discerning coder who already understands the implications of software licensing,
 I'm releasing this under three licenses (GPLv3, AGPL3, and MIT) for you to choose from.
 
 The reason for this licensing decision In this particular case is that making a p2p **library** 
