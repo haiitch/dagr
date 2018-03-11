@@ -15,8 +15,8 @@ IPFS::DAG        # handles IPFS node manipulation through the plain dag api comm
 ```
 
 both DAGObject and DAG make use of IPFS::Client to store and retrieve 
-dag nodes offering convenience methods and operators to walk dags
-following the two distinct conventions of each method.
+dag nodes offering convenience methods and operators to walk dag links
+following the distinct conventions of each approach.
 
 when used in isolation, IPFS::Client offers access to many other
 simple api subcommands (under the api's key, name, block, etc. commands)
