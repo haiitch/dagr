@@ -1,5 +1,5 @@
-# dagr
-### dagr is a ruby client for the api exposed by an IPFS daemon.
+# dagr 
+#### dagr is a lean and mean ruby client for the api exposed by an IPFS daemon.
 
 the current go-ipfs version I'm testing dagr against is go-ipfs 0.4.14-dev.
 some samples on how to use it are available under the poets/ directory
