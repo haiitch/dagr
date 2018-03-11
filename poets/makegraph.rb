@@ -5,8 +5,11 @@ require '../rb/dagr.rb'
 
 include IPFS
 
-
+# api endpoint specified as parameter to the constructor.
+# subsequent instances of the client will keep the last used endpoint
+# as the default. if none is specified, it will use standard IPFS defaults.
 c = IPFS::Client.new("http://127.0.0.1:45001/api/v0")
+
 start_time = Time.now
 
 nodes = Dir.glob("*.json").sort!
@@ -55,13 +58,18 @@ graphnode = IPFS::DAG.new({ name: "Sample graph",
 						})
 
 
-
+# attempt to build this undirected graph as a mutable
+# data structure on top of the dag
+#
 #  (01)----(02)----(04)
 #     \    /  \
 #      (03)    `---(05)
 #
 
 
+# trying out different adjacency and incidence lists
+# to see which perform better, and what's the optimal
+# number of nodes for a subjective mutable graph
 adjlist = {
 	"0001" => ["0002", "0003"],
 	"0002" => ["0001", "0003", "0004", "0005"],
