@@ -11,6 +11,9 @@ easier to use for more people will hurt centralization more, and I'm leaving it 
 to you to decide which will help you better to achieve that primary goal with 
 your particular **application**.
 
+All your freedoms will be thoroughly respected if you choose one of the Libre licences,
+and that option is available to you if you abide by the terms of the GPLv3 or the AGPLv3.
+
 That being said, in case you intend to submit contributions, it will be easier for
 me to incorporate changes if you license them back to me as MIT.
 Since you can easily clone and vendor-in anything I produce, that shouldn't be
