@@ -121,6 +121,8 @@ module IPFS
 			return robj
 		end
 
+		#   TO-DO: Implementing this, work in progress
+		#
 		#   Walk returns the object (DAGObject, DAG, or Block) pointed 
 		#   by a path reference, resolving as appropriate when possible
 		#
@@ -163,19 +165,19 @@ module IPFS
 		# the ipfs dag commands
 		def add(obj)
         		begin
-					dagobj = request( cmd: "add", method: :post, obj: obj)
-				rescue
-					throw "Error: couldn't add #{obj}"
-				end 
-				DAGObject.new(dagobj["Hash"])
+				dagobj = request( cmd: "add", method: :post, obj: obj)
+			rescue
+				throw "Error: couldn't add #{obj}"
+			end 
+			DAGObject.new(dagobj["Hash"])
 		end
 
 		def ls(addr)			
         		begin 				
-					list = request( cmd: "ls", args: [addr])
-				rescue
-					throw "Error: couldn't execute ls #{addr}"
-				end 
+				list = request( cmd: "ls", args: [addr])
+			rescue
+				throw "Error: couldn't execute ls #{addr}"
+			end 
 		end 
 
 		######### NAME ##########
@@ -215,25 +217,29 @@ module IPFS
 		end 
 
 
-		######### KEY ##########
+		######### BLOCK ##########
 		def block_put(data)
 			klass= data.class.to_s 
 			if ["Array", "Hash"].include?(klass) then 
-				data = data.to_json # maybe use cbor + gzip here instead
+				data = data.to_json 
 			end  
 			d = request(:cmd => "block/put", :obj => data )	
 			d["Key"] if d["Key"]!=nil 
 		end
 		alias_method :blockput, :block_put 
+		alias_method :put, :block_put
 
 		def block_get(key)
 			d = request(:cmd => "block/get", :args => [key], json: false )
 		end
 		alias_method :blockget, :block_get 
+		alias_method :get, :block_get
 
 		# handle with care, use in a thread or goroutine only
 		# block/rm takes too long to complete, synchronous calls may
-		# block your application for too long
+		# block your application for too long.
+		# if you timeout or abort, you may not be able to learn 
+		# whether the operation was successful
 		def block_rm(key)
 			d = request(:cmd => "block/rm", :args => [key], json: false )
 		end
